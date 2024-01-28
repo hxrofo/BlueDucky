@@ -146,7 +146,7 @@ def is_valid_mac_address(mac_address):
     return mac_address_pattern.match(mac_address) is not None
 
 # Function to read DuckyScript from file
-def read_duckyscript(filename='payload.txt'):
+def read_duckyscript(filename):
     if os.path.exists(filename):
         with open(filename, 'r') as file:
             return [line.strip() for line in file.readlines()]
