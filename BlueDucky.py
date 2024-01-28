@@ -639,7 +639,8 @@ def main():
         log.info("No target address provided. Exiting.")
         return
 
-    duckyscript = read_duckyscript()
+    duckyscript_filename = input("Enter the filename for DuckyScript commands: ")
+    duckyscript = read_duckyscript(duckyscript_filename)
     if not duckyscript:
         log.info("Payload file not found. Exiting.")
         return
